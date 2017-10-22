@@ -1,0 +1,110 @@
+$color-one: #e04040;
+$color-two: #516d72;
+$color-three: #332f37;
+$color-four: #f65655;
+$color-five: #e16d5c;
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&subset=cyrillic');
+
+body{
+  padding: 45px 0 0 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: 'Noto Sans', sans-serif;
+}
+img{
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+ul, ul li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+hr{
+  padding-top: 0,5cm;
+}
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 45px;
+  background-color: $color-one;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: white;
+  &__menu{
+    max-width: 45px;
+    flex: 1;
+    cursor: pointer;
+    svg{
+      width: 25px;
+      fill: white;
+    }
+  }
+  &__title{
+    flex: 1;
+    color: white;
+  }
+}
+.cards{
+  margin-top: 15px;
+  border-top: 1px solid $color-two;
+  border-bottom: 1px solid $color-two;
+  color: $color-two;
+}
+.card-sale{
+  &__content{
+    padding: 15px;
+    font-size: 1.2rem;
+    &__location{
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      font-size: 0.9rem;
+      svg{
+        width: 25px;
+        fill: $color-two;
+      }
+    }
+    &__price{
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.1rem;
+      margin-top: 15px;
+      color: $color-three;
+      > div{
+        font-size: 1rem;
+      }
+      div:first-child{
+        color: $color-four;
+        align-self: flex-start;
+        font-size: 1.3rem;
+      }
+      div:last-child{
+        align-self: flex-end;
+        color: $color-five;
+      }
+    }
+  }
+}
+
+.card-news{
+  padding: 15px;
+  font-size: 5px;
+}
+
+.card_news--text{
+  text-align: justify;
+  
+
+}

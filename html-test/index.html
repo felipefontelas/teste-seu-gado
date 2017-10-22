@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Seu Gado Html Test</title>
+</head>
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+} 
+</script>
+<body>
+<header class="header">
+<div id="mySidenav" class="sidenav" visibility="hidden">
+  <a href="#"><img src="https://www.corporateunited.com/CorporateUnited/media/Corporate-United-Media/SVG%20Icons/category-icon-it-telecom-red.svg?width=100&height=100&mode=crop" class='iconDetails_sidebar'/>Categoria</a>
+  <a href="#"><img src="https://www.corporateunited.com/CorporateUnited/media/Corporate-United-Media/SVG%20Icons/category-icon-it-telecom-red.svg?width=100&height=100&mode=crop" class='iconDetails_sidebar'/>Categoria</a>
+  <a href="#"><img src="https://www.corporateunited.com/CorporateUnited/media/Corporate-United-Media/SVG%20Icons/category-icon-it-telecom-red.svg?width=100&height=100&mode=crop" class='iconDetails_sidebar'/>Categoria</a>
+  <a href="#"><img src="https://www.corporateunited.com/CorporateUnited/media/Corporate-United-Media/SVG%20Icons/category-icon-it-telecom-red.svg?width=100&height=100&mode=crop" class='iconDetails_sidebar'/>Categoria</a>
+  <a href="#"><img src="https://www.corporateunited.com/CorporateUnited/media/Corporate-United-Media/SVG%20Icons/category-icon-it-telecom-red.svg?width=100&height=100&mode=crop" class='iconDetails_sidebar'/>Categoria</a>
+  <a href="#"><img src="https://www.corporateunited.com/CorporateUnited/media/Corporate-United-Media/SVG%20Icons/category-icon-it-telecom-red.svg?width=100&height=100&mode=crop" class='iconDetails_sidebar'/>Categoria</a>
+  <a href="#"><img src="https://www.corporateunited.com/CorporateUnited/media/Corporate-United-Media/SVG%20Icons/category-icon-it-telecom-red.svg?width=100&height=100&mode=crop" class='iconDetails_sidebar'/>Categoria</a>
+  <a href="#"><img src="https://www.corporateunited.com/CorporateUnited/media/Corporate-United-Media/SVG%20Icons/category-icon-it-telecom-red.svg?width=100&height=100&mode=crop" class='iconDetails_sidebar'/>Categoria</a>
+  <a href="#"><img src="https://www.corporateunited.com/CorporateUnited/media/Corporate-United-Media/SVG%20Icons/category-icon-it-telecom-red.svg?width=100&height=100&mode=crop" class='iconDetails_sidebar'/>Categoria</a>
+</div>
+    <div class="header__menu" onclick="openNav()">
+        <svg viewBox="0 -2 24 24" >
+        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        </svg>
+    </div>
+    <a href="index.html" class="header__title">Html Test Seu Gado</a>
+</header>
+<div onclick="closeNav()">
+<a href="detail.html" class="cards card-sale" data-card>
+    <img src="assets/images/horse.jpg" alt="horse">
+    <div class="card-sale__content">
+        Vende-se cavalo Manga Larga de família premiada em corridas
+        <div class="card-sale__content__location">
+            <svg viewBox="5 0 24 24">
+                <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+            </svg>
+            Fazenda São Luis da Glória
+        </div>
+        <div class="card-sale__content__price">
+            <div>R$ 14.000,00</div>
+            <div>em até 36x</div>
+        </div>
+    </div>
+</a>
+<a href="detail.html" class="cards card-sale" data-card>
+    <br></br>
+    <img src="assets/images/horse.jpg" alt="horse" class='iconDetails'>
+    <div style='margin-left:60px; margin-right:15px; text-align: justify;'>
+        Cavalos escapam de fazenda e causam problemas em rodovia no estado de São Paulo  
+    </div>
+    <br></br>
+</a>
+<a href="detail.html" class="cards card-sale" data-card>
+    <div class="card-sale__content">
+        Cavalos escapam de fazenda e causam problemas em rodovia no estado de São Paulo
+    </div>
+    <img src="assets/images/horse.jpg" alt="horse">
+
+</a>
+</div>
+<link rel="stylesheet" href="assets/css/test.css">
+<script src="assets/js/test.js"></script>
+</body>
+</html>
